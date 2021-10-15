@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <link rel="stylesheet" href="stylesheetCSS.css">
+    <meta charset="UTF-8">
+    <title>Waehrungsrechner</title>
+</head>
+<body>
+  <form action="waehrungs-Rechner" method="get">
+    <h1>Währungsrechner</h1>
+    <table>
+      <tr>
+        <td class="textb">Betrag: </td>
+        <td><label for="betrag"></label>
+          <input type="text" id="betrag" name="betrag"></td>
+      </tr>
+      <tr>
+        <td class="textb">Basiswährung: </td>
+        <td>
+          <select name="bwaehrung" id="bwaehrung">
+            <option value = "Währung wählen">Währung wählen</option>
+            <option value = "EURO">EURO</option>
+            <option value = "US-DOLLAR">US-DOLLAR</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><img src="pfeil.png" width="8%" align="right"></td>
+      </tr>
+      <tr>
+        <td class="textb">Zielwährung: </td>
+        <td>
+          <select name="zwaehrung" id="zwaehrung">
+            <option value = "Währung wählen">Währung wählen</option>
+            <option value = "EURO">EURO</option>
+            <option value = "US-DOLLAR">US-DOLLAR</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Neu berechnen" width="100%"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
